@@ -106,8 +106,21 @@
          background-color:dimgrey;
        }
     body{
-            background-color: mediumvioletred;
+            background: linear-gradient(52deg,green,black,yellow,red,blue,white,pink);
+            background-size: 400% 400%;
+            animation: bg 12s ease-in-out infinite;
         }  
+        @keyframes bg{
+          0%{
+            background-position: 0% 50%;
+          }
+          50%{
+            background-position: 100% 100%;
+          }
+          100%{
+            background-position: 0% 50%;
+          }
+        }
     .k{
         display: flex;
     }
