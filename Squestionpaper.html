@@ -103,7 +103,20 @@
         width: 350px;
     }
      body{
-        background-color:bisque;
+        background: linear-gradient(-52deg,bisque,yellow,darkslategray,white,pink,darkorange);
+            background-size: 400% 400%;
+            animation: bg 12s ease-in-out infinite;
+        }  
+        @keyframes bg{
+          0%{
+            background-position: 0% 50%;
+          }
+          50%{
+            background-position: 100% 100%;
+          }
+          100%{
+            background-position: 0% 50%;
+          }
     }
     a{
         color: dimgrey;
@@ -112,7 +125,7 @@
         color: brown;
      }
     .row{
-        background-color: gainsboro;      
+        background-color: blanchedalmond;      
     }
     .row:hover{
          background-color: yellow;
@@ -167,6 +180,15 @@
  }
  .row-2{
     background-color:whitesmoke;
+ }
+ .nav-link{
+    color: darkorange;
+ }
+ .nav-link:hover{
+    color: purple;
+ }
+ .shalu{
+    color: red;
  }
 </style>
 </html>
