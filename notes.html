@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-        <div class="container">
-        <div class="row">
-            <div class="col-6 adiv"><a href="index.html">home section</a></div>
-            <div class="col-6 bdiv"><a href="notes.html">random notes</a></div>
-                <div class="col-6 cdiv"><a href="Squestionpaper.html">School Section</a></div>
-                <div class="col-6 ddiv"><a href="Cquestionpaper.html">College Section</a></div>
-                </div>
- </div>
+  <table class="table-bordered">      
+          <tr>            
+            <th><a  class="tu" href="index.html">home section</a></th>
+           <th><a class="tu" href="notes.html">random notes</a> </th> 
+              <th> <a class="tu" href="Squestionpaper.html">School Section</a></th>  
+              <th><a class="tu" href="Cquestionpaper.html">College Section</a></th> 
+ </tr>
+</table>
  <hr>
  <a href="https://wa.me/918168173141" <i class="fa-brands fa-whatsapp fa-bounce"></i><b class="shalu">contact on whatshap</b> </a>
   <hr>  
@@ -49,6 +49,9 @@
         background-color: cornsilk;
      }
      body{
+      hr{
+        background-color: black;
+      }
         background: linear-gradient(-52deg,green,darkslategray,purple,pink),darkorchid;
             background-size: 400% 400%;
             animation: bg 12s ease-in-out infinite;
@@ -66,20 +69,15 @@
             background-position: 0% 50%;
           }
     }
-    .row{
-        background-color: black;
-    }
-        .row:hover{
-            background:linear-gradient(to left,pink,green,red);
-        }  
     a{
-        color: antiquewhite;
+        color: palevioletred;
     }
     a:hover{
         color: chocolate;
     }
    table th td tr.colsetwidth{
     width: 50%;
+    border-radius: 14px;
    }
    .ab{
     color: blue;
@@ -95,6 +93,9 @@
    }
    .shalu{
     color: chartreuse;
+   }
+   .tu{
+    color: black;
    }
  </style>
 </body>
