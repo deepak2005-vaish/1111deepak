@@ -16,6 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   </head>
  <body> 
+  
+    <div id="loader" class="center"> 
+      <h6>hello</h6>
+     </div>
    <img  class="genius" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTNrbmJpNXhpMTl0dHh2NTYxZ296MTNncXh1dTkwbnE0eW9vYnFpbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/7fSp8PUG1L5eHVZbHz/giphy.gif">
    <br><a href="goback.html"><img class="laptop" src="images/go back.jpg"></a><br><h9 class="te">Click on this arrow</h9>
                                          <hr>  
@@ -152,6 +156,29 @@ and you can write your problems ,then i will suggest you</h4>
 <hr>
 </body>
 <style>
+  #loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #444444;
+            width: 250px;
+            height: 250px;
+            animation: spin 1s linear infinite;
+        }
+
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
   .genius{
     margin-left: 2cm;
   }
@@ -331,4 +358,19 @@ height: 40px;
         background-color: black;
        }
     </style>
+    <script>
+      document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
 </html>
